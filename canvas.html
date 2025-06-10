@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 캔바스태그</title>
+</head>
+<body>
+<!--캔바스 태그는 자바스크립트랑 같이 사용해야 함--> 
+<canvas id="myCanvas" 
+width="200" height="100"
+style="border:1px solid;"
+>
+    미안하진 않지만 너의 브라우저는 캔바스 태그 지원이 안됨
+</canvas>
+
+<script>
+    const canvas=document.getElementById("myCanvas");
+    const ctx=canvas.getContext("2d");
+    ctx.fillStyle="red";
+    ctx.fillRect(0,0,150,75);
+</script>
+
+
+</body>
+</html>
